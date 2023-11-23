@@ -2,18 +2,18 @@
 #include <string>
 
 int main() {
-    // Crear una cadena utilizando la clase string
-    std::string miCadena = "Hola, mundo!";
+    // Usar un mensaje más descriptivo para la cadena original
+    std::string textoOriginal = "Inteligencia Artificial";
 
-    // Utilizar la función substr() para obtener una subcadena
-    std::string subcadena = miCadena.substr(0, 5);  // Obtiene los primeros 5 caracteres
+    // Obtener una subcadena usando substr()
+    std::string subcadena = textoOriginal.substr(13, 10); // "Artificial"
 
-    // Utilizar la función insert() para insertar otra cadena en la cadena
-    std::string nuevaCadena = " Querido";
-    miCadena.insert(5, nuevaCadena);  // Inserta la nueva cadena después del quinto carácter
+    // Insertar una nueva cadena al principio usando insert()
+    std::string nuevaCadena = textoOriginal.insert(0, "La "); // "La Inteligencia Artificial"
 
-    // Imprimir la cadena resultante
-    std::cout << "La cadena resultante es: " << miCadena << std::endl;
+    // Imprimir la subcadena y la cadena resultante
+    std::cout << "Subcadena: " << subcadena << std::endl;
+    std::cout << "Cadena resultante: " << nuevaCadena << std::endl;
 
     return 0;
 }
