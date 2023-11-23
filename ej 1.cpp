@@ -11,12 +11,8 @@ int main() {
     // Imprimir el tamaño de la cadena utilizando la función size()
     std::cout << "El tamaño de la cadena es: " << phrase.size() << " caracteres." << std::endl;
 
-    // Comprobar si la cadena está vacía utilizando la función empty()
-    if (phrase.empty()) {
-        std::cout << "La cadena esta vacia." << std::endl;
-    } else {
-        std::cout << "La cadena no está vacia." << std::endl;
-    }
+    // Preguntar si la cadena está vacía y mostrar la respuesta
+    std::cout << "La cadena esta vacia? " << (phrase.empty() ? "Si" : "No") << std::endl;
 
     return 0;
 }
